@@ -6,6 +6,7 @@ export interface Event {
     description: string;
     availableTickets: number;
     price: number;
+    category: string;
 }
 
 export const events: Event[] = [
@@ -18,6 +19,7 @@ export const events: Event[] = [
             "Big Ten showdown at The Horseshoe featuring Ohio State football under the lights.",
         availableTickets: 120,
         price: 145,
+        category: "Sports",
     },
     {
         id: 2,
@@ -28,6 +30,7 @@ export const events: Event[] = [
             "Rivalry game in Columbus with conference implications and high-energy crowd support.",
         availableTickets: 95,
         price: 85,
+        category: "Sports",
     },
     {
         id: 3,
@@ -38,6 +41,7 @@ export const events: Event[] = [
             "The Ohio State University Symphony Orchestra performs a program of classical masterworks.",
         availableTickets: 160,
         price: 30,
+        category: "Music",
     },
     {
         id: 4,
@@ -48,6 +52,7 @@ export const events: Event[] = [
             "High-stakes MLS matchup in downtown Columbus with one of the league's best atmospheres.",
         availableTickets: 210,
         price: 55,
+        category: "Sports",
     },
     {
         id: 5,
@@ -57,7 +62,8 @@ export const events: Event[] = [
         description:
             "Outdoor concert featuring regional indie and alternative artists along the downtown riverfront.",
         availableTickets: 300,
-        price: 40,
+        price: 0,
+        category: "Music",
     },
     {
         id: 6,
@@ -68,5 +74,6 @@ export const events: Event[] = [
             "A citywide favorite with dozens of local food trucks, live music, and family-friendly activities.",
         availableTickets: 250,
         price: 20,
+        category: "Food & Dining",
     },
 ];
